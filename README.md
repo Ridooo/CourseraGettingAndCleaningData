@@ -224,5 +224,9 @@ tail(x = molten,n = 4)
 ## 4         LAYING           30 fBodyBodyGyroJerkMag_Std -0.9754815
 ```
 
+```r
+write.csv(file = "molten.csv", x = molten)
+```
+
 In *molten* dataset, each row of *average* variable is the average of the values of an esteimated varaible for activity for subject.
 

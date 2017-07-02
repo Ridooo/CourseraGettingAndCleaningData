@@ -177,6 +177,7 @@ In fact, *summary_DAT2* in tidy view should have four variables, *activity_label
 molten <- summary_DAT2 %>% gather(feature, average, - which(colnames(summary_DAT2) %in% c("activity_label","subject_code")))
 head(x = molten,n = 4)
 tail(x = molten,n = 4)
+write.csv(file = "molten.csv", x = molten)
 ```
 
 In *molten* dataset, each row of *average* variable is the average of the values of an esteimated varaible for activity for subject.
